@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="rstyle.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="block">
+            <h1 class="header-block">Register for the Bookstore</h1>
+            <nav class="navigation-menu">
+                <a href="home.html" class="nav-link">Home</a> |
+                <a href="fiction.html" class="nav-link">Fiction</a> |
+                <a href="nfiction.html" class="nav-link">Nonfiction</a> |
+                <a href="detective.html" class="nav-link">Detective</a> |
+                <a href="profile.html" class="nav-link">Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <h1 id="greeting"></h1>
+    
+    <section id="register-section" style="display: none;">
+        <div class="container" id="container">
+         <h3>Sign Up, Now!</h3>
+         <small>We are happy to have you with us!</small>
+            <div class="input-group">
+                <div class="input-field">
+                 <input type="text" id="reg-username"  class="input-box" placeholder="Username" required>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="reg-email" class="input-box" placeholder="Email" required>
+                </div>
+                <div class="input-field">
+                  <input type="password" id="reg-password"  class="input-box" placeholder="Password" required>
+                </div>
+                <div class="input-field">
+                    <input type="tel" id="reg-phone" class="input-box" placeholder="Phone Number" required>
+                </div>
+            </div>
+         <button onclick="registerUser()">Register</button>
+         <p> Already have an account? </p>
+         <button onclick="toggleLogin()">Login</button>
+        </div>
+    </section>
+
+    <section class="form-content" id="login-section">
+        <div class="container" id="container">
+          <h3>Hello, Again!</h3>
+          <small>We are happy to have you back!</small>
+            <div class="input-group">
+                <div class="input-field">
+                 <input type="text" id="login-username"  class="input-box" placeholder="Username" required>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="log-email" class="input-box" placeholder="Email" required>
+                </div>
+                <div class="input-field">
+                 <input type="password" id="login-password"  class="input-box" placeholder="Password" required>
+                </div>
+            </div>
+            <button onclick="loginUser()">Login</button>
+            <p> Do you have an account? </p>
+            <button onclick="toggleRegister()">Register</button>
+        </div>
+    </section>
+
+ <script src="registration.js"></script>
+</body>
+
+</html>

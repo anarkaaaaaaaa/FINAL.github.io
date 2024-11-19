@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="rstyle.css">
+</head>
+<body>
+    <header id="main-header">
+        <header id="main-header">
+            <div class="block">
+                <h1 class="header-block">Welcome to your profile</h1>
+                <nav class="navigation-menu">
+                    <a href="home.html" class="nav-link">Home</a> |
+                    <a href="fiction.html" class="nav-link">Fiction</a> |
+                    <a href="nfiction.html" class="nav-link">Nonfiction</a> |
+                    <a href="detective.html" class="nav-link">Detective</a> |
+                    <a href="registration.html" class="nav-link">Account</a> 
+                </nav>
+            </div>
+        </header>
+    </header>
+    <main>
+        <section class="form-content" id="login-section">
+        <div class="container" id="container">
+            <h3 id="profile-username"></h3>
+            <p id="profile-email"></p>
+            <button onclick="logoutUser()">Logout</button>
+        </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const user = JSON.parse(localStorage.getItem("loggedInUser"));
+            if (user) {
+                document.getElementById("profile-username").textContent = `Username: ${user.username}`;
+                document.getElementById("profile-email").textContent = `Email: ${user.email || 'Email not provided'}`;
+            } else {
+                window.location.href = "registration.html"; 
+            }
+        });
+
+        function logoutUser() {
+            localStorage.removeItem("isLoggedIn");
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "registration.html";
+        }
+    </script>
+</body>
+</html>

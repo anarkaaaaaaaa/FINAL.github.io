@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiction Books</title>
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="Quote.js"></script>
+</head>
+
+<body>
+    <header class="header-section">
+        <h1>Fiction Books</h1>
+        <nav id="navbar">
+            <a href="home.html" class="nav-link">Home</a> |
+            <a href="nfiction.html" class="nav-link">Nonfiction</a> |
+            <a href="detective.html" class="nav-link">Detective</a> |
+            <a href="registration.html" class="nav-link">Account</a> |
+            <a href="profile.html" class="nav-link">Profile</a>
+        </nav>
+        <hr>
+    </header>
+
+    <button id="changeMessageButton">Press for surprise!</button>
+    <p id="message">Remember that today:</p>
+
+    <div class="filter-container">
+        <h2>Filter by price</h2>
+        <div class="filter-inputs">
+            <input type="number" id="minPrice" placeholder="Minimum price" min="0">
+            <input type="number" id="maxPrice" placeholder="Maximum price" min="0">
+            <button onclick="filterByPrice()" class="filter-button" id="applyFilterBtn">Apply filter</button>
+        </div>
+    </div>
+
+
+    <div class="book-container">
+        <div class="book-item" data-price="20.49">
+            <figure class="image-thumbnail">
+                <img src="https://images-us.bookshop.org/ingram/9781538769256.jpg?height=500&v=v2-7fd4db22ae26f8eb57ca4ff18bfb3a19"
+                    alt="Phantasma">
+                <figcaption>$20.49</figcaption>
+            </figure>
+            <article class="book-details">
+                <h3>Phantasma</h3>
+                <p>Author: Kaylie Smith</p>
+                <p>Description: A gorgeous trade paperback edition with custom gold foiling on the cover! Caraval
+                    meets Throne of the Fallen in this spicy dark romantasy where a necromancer needs help from a
+                    dangerous phantom to win a deadly competition, only to find their partnership puts her at risk
+                    of breaking the game's most vital rule: don't fall in love.</p>
+            </article>
+            <div class="buttons">
+                <button class="book-now-btn">Book Now</button>
+                <button class="add-to-card-btn">Add to card</button>
+                <button class="add-to-wish-btn">Add to wishlist</button>
+            </div>
+        </div>
+
+        <div class="book-item" data-price="16.73">
+            <figure class="image-thumbnail">
+                <img src="https://images-us.bookshop.org/ingram/9781649377616.jpg?height=500&v=v2-501e8ca1aa15fb10ac72becaf3484f8c"
+                    alt="Dating & Dismemberment">
+                <figcaption>$16.73</figcaption>
+            </figure>
+
+            <article class="book-details">
+                <h3>Dating & Dismemberment</h3>
+                <p>Author: A. L. Brody</p>
+                <p>Description: Emily Henry meets Grady Hendrix in the funniest and most original romantic comedy of
+                    the year: a monstrously feel-good cozy fantasy full of love, laughter, lore, and limbs... Now
+                    with brand new bonus content!</p>
+            </article>
+            <div class="buttons">
+                <button class="book-now-btn">Book Now</button>
+                <button class="add-to-card-btn">Add to card</button>
+                <button class="add-to-wish-btn">Add to wishlist</button>
+            </div>
+        </div>
+
+        <div class="book-item" data-price="27.95">
+            <figure class="image-thumbnail">
+                <img src="https://images-us.bookshop.org/ingram/9780316435093.jpg?height=500&v=v2-7280f1afaed2e6d8bff163de3fc1102c"
+                    alt="The Foxglove King">
+                <figcaption>$27.95</figcaption>
+            </figure>
+            <article class="book-details">
+                <h3>The Foxglove King</h3>
+                <p>Author: Hannah Whitten</p>
+                <p>Description: In this lush, romantic epic fantasy series from a New York Times bestselling author,
+                    a young woman's secret power to raise the dead plunges her into the dangerous and glamorous
+                    world of the Sainted King's royal court.</p>
+            </article>
+            <div class="buttons">
+                <button class="book-now-btn">Book Now</button>
+                <button class="add-to-card-btn">Add to card</button>
+                <button class="add-to-wish-btn">Add to wishlist</button>
+            </div>
+        </div>
+
+        <div class="book-item" data-price="12.48">
+            <figure class="image-thumbnail">
+                <img src="https://m.media-amazon.com/images/I/91tK5sU9oOL._SY522_.jpg" alt="Six of Crows">
+                <figcaption>$12.48</figcaption>
+            </figure>
+            <article class="book-details">
+                <h3>Six of Crows</h3>
+                <p>Author: Leigh Bardugo</p>
+                <p>Description: Ketterdam: a bustling hub of international trade where anything can be had for the right
+                    price―and no one knows that better than criminal prodigy Kaz Brekker. Kaz is offered a chance at a
+                    deadly heist that could make him rich beyond his wildest dreams. But he can't pull it off alone. . .
+                    .</p>
+            </article>
+            <div class="buttons">
+                <button class="book-now-btn">Book Now</button>
+                <button class="add-to-card-btn">Add to card</button>
+                <button class="add-to-wish-btn">Add to wishlist</button>
+            </div>
+        </div>
+
+        <div class="book-item" data-price="13.03">
+            <figure class="image-thumbnail">
+                <img src="https://m.media-amazon.com/images/I/91Tz8gnD31L._SX385_.jpg" alt="Crooked Kingdomt">
+                <figcaption>$13.03</figcaption>
+            </figure>
+            <article class="book-details">
+                <h3>Crooked Kingdom</h3>
+                <p>Author: Leigh Bardugo</p>
+                <p>Description: Kaz Brekker and his crew have just pulled off a heist so daring even they didn't think
+                    they'd survive. But instead of divvying up a fat reward, they're right back to fighting for their
+                    lives. Double-crossed and badly weakened, the crew is low on resources, allies, and hope.</p>
+            </article>
+            <div class="buttons">
+                <button class="book-now-btn">Book Now</button>
+                <button class="add-to-card-btn">Add to card</button>
+                <button class="add-to-wish-btn">Add to wishlist</button>
+            </div>
+        </div>
+
+        <div class="book-item" data-price="12.76">
+            <figure class="image-thumbnail">
+                <img src="https://m.media-amazon.com/images/I/91vfeH144cL._SX385_.jpg"
+                    alt="The Cruel Prince: The Folk of the Air">
+                <figcaption>$12.76</figcaption>
+            </figure>
+            <article class="book-details">
+                <h3>The Cruel Prince: The Folk of the Air</h3>
+                <p>Author: Holly Black </p>
+                <p>Description: Of course I want to be like them. They're beautiful as blades forged in some divine
+                    fire. They will live forever.
+
+                    And Cardan is even more beautiful than the rest. I hate him more than all the others. I hate him so
+                    much that sometimes when I look at him, I can hardly breathe.</p>
+            </article>
+            <div class="buttons">
+                <button class="book-now-btn">Book Now</button>
+                <button class="add-to-card-btn">Add to card</button>
+                <button class="add-to-wish-btn">Add to wishlist</button>
+            </div>
+        </div>
+
+        <div class="book-item" data-price="12.80">
+            <figure class="image-thumbnail">
+                <img src="https://m.media-amazon.com/images/I/91mCD+HErbL._SY522_.jpg" alt="The Wicked King">
+                <figcaption>$12.80</figcaption>
+            </figure>
+            <article class="book-details">
+                <h3>The Wicked King</h3>
+                <p>Author: Holly Black </p>
+                <p>Description: Of course I want to be like them. They're beautiful as blades forged in some divine
+                    fire. They will live forever.
+
+                    And Cardan is even more beautiful than the rest. I hate him more than all the others. I hate him so
+                    much that sometimes when I look at him, I can hardly breathe.</p>
+            </article>
+            <div class="buttons">
+                <button class="book-now-btn">Book Now</button>
+                <button class="add-to-card-btn">Add to card</button>
+                <button class="add-to-wish-btn">Add to wishlist</button>
+            </div>
+        </div>
+
+        <div class="book-item" data-price="9.49">
+            <figure class="image-thumbnail">
+                <img src="https://m.media-amazon.com/images/I/91lnRGu3qrL._SY522_.jpg" alt="The Queen of Nothing">
+                <figcaption>$9.49</figcaption>
+            </figure>
+            <article class="book-details">
+                <h3>The Queen of Nothing</h3>
+                <p>Author: Holly Black </p>
+                <p>Description: Of course I want to be like them. They're beautiful as blades forged in some divine
+                    fire. They will live forever.
+
+                    And Cardan is even more beautiful than the rest. I hate him more than all the others. I hate him so
+                    much that sometimes when I look at him, I can hardly breathe.</p>
+            </article>
+            <div class="buttons">
+                <button class="book-now-btn">Book Now</button>
+                <button class="add-to-card-btn">Add to card</button>
+                <button class="add-to-wish-btn">Add to wishlist</button>
+            </div>
+        </div>
+
+        <div class="book-item" data-price="17.59">
+            <figure class="image-thumbnail">
+                <img src="https://m.media-amazon.com/images/I/81A-T+X6ukL._SY522_.jpg"
+                    alt="A Court of Thorns and Roses">
+                <figcaption>$17.59</figcaption>
+            </figure>
+            <article class="book-details">
+                <h3>A Court of Thorns and Roses</h3>
+                <p>Author: Sarah J. Maas </p>
+                <p>Description: When nineteen-year-old huntress Feyre kills a wolf in the woods, a terrifying creature
+                    arrives to demand retribution. Dragged to a treacherous magical land she knows about only from
+                    legends, Feyre discovers that her captor is not truly a beast, but one of the lethal, immortal
+                    faeries who once ruled her world.
+                    At least, he's not a beast all the time.</p>
+            </article>
+            <div class="buttons">
+                <button class="book-now-btn">Book Now</button>
+                <button class="add-to-card-btn">Add to card</button>
+                <button class="add-to-wish-btn">Add to wishlist</button>
+            </div>
+        </div>
+
+        <div class="book-item" data-price="11.46">
+            <figure class="image-thumbnail">
+                <img src="https://m.media-amazon.com/images/I/912fTvsUKLL._SY522_.jpg" alt="Iron Flame">
+                <figcaption>$11.46</figcaption>
+            </figure>
+            <article class="book-details">
+                <h3>Iron Flame</h3>
+                <p>Author: Holly Black </p>
+                <p>Description: Of course I want to be like them. They're beautiful as blades forged in some divine
+                    fire. They will live forever.
+
+                    And Cardan is even more beautiful than the rest. I hate him more than all the others. I hate him so
+                    much that sometimes when I look at him, I can hardly breathe.</p>
+            </article>
+            <div class="buttons">
+                <button class="book-now-btn">Book Now</button>
+                <button class="add-to-card-btn">Add to card</button>
+                <button class="add-to-wish-btn">Add to wishlist</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-container">
+        <p>&copy; 2024 Online Bookstore. All rights reserved. Altynay Mukhamediyarova and Anar Tolybay. 10.09.2024.</p>
+    </footer>
+</body>
+
+</html>

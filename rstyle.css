@@ -1,0 +1,211 @@
+body {
+    font-family: 'Georgia', sans-serif;
+    line-height: 2;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header {
+    background-color: #166d98;
+    color: #ffffff;
+    padding: 17px 0;
+    text-align: center;
+    border-bottom: 2px solid #c17d4d;
+}
+
+.header-block {
+    margin: 0;
+    font-size: 32px;
+    color: white;
+}
+
+.navigation-menu {
+    background-color: #A4741B;
+    padding: 3px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #f5c6a5;
+    margin: 10px 0;
+}
+#greeting {
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    background: linear-gradient(90deg, #3fa6d2, #166D92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.container{
+background-color: #fff;
+border-radius: 30px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+position: center;
+overflow: hidden;
+width: 300px;
+max-width: 100%;
+min-height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.container p{
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    margin: 7px 0;
+}
+
+.container span{
+    font-size: 12px;
+}
+
+.container a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button{
+    background-color: #166D92;
+    color: #fff;
+    font-family: 'Georgia', sans-serif;
+    font-size: 14px;
+    padding: 10px 35px;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 18px;
+    width: 50%;
+    outline: none;
+}
+
+#logout-btn {
+    background-color: #166D92;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Georgia', sans-serif;
+    padding: 8px 25px;
+    border: 2px solid transparent;
+    border-color: white;
+    border-radius: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#user-greeting {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+.input-group{
+    width: 100%;
+   
+}
+.input-field{
+   margin: 12px 0;
+   position: relative;
+}
+.input-box{
+    width: 100%;
+    height: 15px;
+    font-size: 15px;
+    color: #040404;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 45px 0 20px;
+    background: rgba(224, 223, 223, 0.6);
+    backdrop-filter: blur(2px);
+    outline: none;
+}
+.input-field label{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 15px;
+    transition: .3s ease-in-out;
+}
+.input-box:focus ~ label,.input-box:valid ~ label{
+    top: 2px;
+    font-size: 10px;
+    color: #c12828;
+    font-weight: 500;
+}

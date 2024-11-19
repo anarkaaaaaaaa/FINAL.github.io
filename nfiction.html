@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonfiction Books</title>
+    <link rel="stylesheet" href="stylenfiction.css">
+    <script src="scriptfornfiction.js" defer></script>
+</head>
+
+<body>
+    <header class="header-section">
+        <h1>Nonfiction Books</h1>
+        <nav id="navbar">
+            <a href="home.html" class="nav-link">Home</a> |
+            <a href="fiction.html" class="nav-link">Fiction</a> |
+            <a href="detective.html" class="nav-link">Detective</a> |
+            <a href="registration.html" class="nav-link">Account</a> |
+            <a href="profile.html" class="nav-link">Profile</a>
+        </nav>
+        <hr>
+    </header>
+
+    <section>
+        <h2>Search for Books</h2>
+        <form id="book-search-form">
+            <input type="text" id="search-input" placeholder="Search for books..." />
+            <button type="submit">Search</button>
+        </form>
+        <div id="search-results"></div>
+        <div id="loader" class="loader" style="display: none;"></div>
+    </section>
+</body>
+
+</html>
